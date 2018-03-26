@@ -1,0 +1,112 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero {
+	background-color: #999;
+	padding: 80px 0px;
+	height: 400px;
+}
+
+.mynav{
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+	color: #FFF;
+	
+}
+
+.navbar{
+	background-color: rgba(0, 0, 0, 0.075) !important;
+}
+
+.black {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar .navbar-brand{
+	color: #FFF;
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+
+.navbar .nav-item a{
+	color: #FFF !important;
+	
+}
+
+.wrap {
+	width: 90%;
+	max-width: 11000px;
+	margin: 0 auto;
+}
+
+.wraptext {
+	width: 60%;
+	max-width: 11000px;
+	margin: 0 auto;	
+	padding: 30px 0;
+}
+
+.toptext{
+	text-align: center;
+}
+
+.icon-bar
+{
+  background:green !important; /*Whatever colour you want for icon lines*/
+}
+.navbar-toggle
+{
+  background:white !important; /*Whatever colour you want for background */
+}
+
+.mynav .contents {
+	padding: 200px 0 130px;
+  }
+  
+.mynav .contents h1 {
+	color: #fff;
+	font-size: 42px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+  
+.mynav .contents p {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0.5px;
+}
+
+.navbar .dropdown-menu{
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+.dropdown-item:hover{
+	background-color: rgba(0, 0, 0, 0.075) !important;
+}
+
+#direcoes{
+	padding: 0 0 24px;
+    background: black;
+    color: #e3e3e3;
+    line-height: 1.6;
+    align-items: center;
+}
+
+#new_contact .form-group{
+	margin: 40px 0;
+}
+
+#map {
+	height: 70%;
+	width: 100%;
+}
+
+.ilideres {
+	height: 200px;
+	width: 200px;
+}
+

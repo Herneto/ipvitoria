@@ -1,0 +1,51 @@
+<% if controller_name == "contacts" %>
+    <style type="text/css">
+		.mynav{
+			background: url("/assets/1.png") fixed ;
+			
+			}
+		.tema{
+			color: rgb(191, 193, 69);
+			}
+		
+		</style>
+<% elsif controller_name == "home" %>
+		<style type="text/css">
+			.mynav{
+				background: url("/assets/6.png") fixed ;
+			}
+		</style>
+<% elsif controller_name == "historia" %>
+		<style type="text/css">
+			.mynav{
+			background: url("/assets/5.png") fixed ;
+			}
+		</style>
+<% elsif controller_name == "declaracao" %>
+	<style type="text/css">
+		.mynav{
+		    background: url("/assets/7.png") fixed ;
+					}
+		</style>
+<% elsif controller_name == "lideres" %>
+	<style type="text/css">
+		.mynav{
+			background: url("/assets/8.png") fixed ;
+		}
+		.tema{
+			color: rgb(191, 63, 105);
+		}
+		a {
+  			color: rgb(191, 63, 105);
+
+			&:visited {
+				color: rgb(191, 63, 105);
+			}
+
+		&:hover {
+			color: rgb(191, 63, 105);
+			background-color: rgb(191, 63, 105);
+		}
+		}
+	</style>
+<% end %>			

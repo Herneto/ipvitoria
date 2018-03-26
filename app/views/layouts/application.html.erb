@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IPVitória</title>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>	
+	</head>
+	<body>
+
+	<%= render 'layouts/color' %>
+	<%= render 'layouts/header' %>
+	<div id="main"> 
+	<%= yield %>		
+	</div>
+	<%= render 'layouts/footer' %>		
+
+
+	<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -8.809622, lng: 13.28384},
+					zoom: 16
+					
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsFvZDnwvQxAxnKY-A4IyTYDHAvb3V5ZI&callback=initMap"
+    async defer></script>
+
+	<script src="/assets/jquery-1.10.2.js"></script>
+	<script src="/assets/bootstrap.js"></script>
+	<script type="text/javascript">
+	    $(window).on('scroll',function(){
+			if($(window).scrollTop()){
+				$('nav').addClass("black");
+				$("#dropdown-menu").addClass("black");
+			}else{
+				$('nav').removeClass("black");
+				$("#dropdown-menu").removeClass("black");
+			}
+		})
+	</script>
+  </body>
+</html>

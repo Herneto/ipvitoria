@@ -1,0 +1,12 @@
+$("#contact_nome").val('');
+$("#contact_email").val('');
+$("#contact_mensagens").val('');
+
+$(".alert").html("Mensagem enviada!");
+$(".alert").show(300);
+
+$(function(){
+    setTimeout(function(){
+        $(".alert").fadeOut('fast');
+    }, 2000);
+});
