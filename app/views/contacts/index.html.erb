@@ -13,18 +13,6 @@
 
 
     <%= form_for(@contact, remote: true, :html => {:class => "form-horizontal col-sm-12"})  do |f|  %>
-      <% if @contact.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
-
-          <ul>
-          <% contact.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-          </ul>
-        </div>
-      <% end %>
-
 
       <div class="form-group">        
         <div class=" col-sm-12">
@@ -32,6 +20,7 @@
         <%= f.text_field :nome, id: :contact_nome, class: "form-control input-lg"%>
       </div>
       </div>
+      <br>
       <div class="form-group">
         
         <div class="col-sm-12">
@@ -39,17 +28,19 @@
            <%= f.text_field :email, id: :contact_email, class: "form-control input-lg", type: "email" %>
         </div>
       </div> 
-
+      <br>
+      
       <div class="form-group">        
         <div class="col-sm-12">
         <label for="contact_mensagens">QUESTÕES, COMENTÁRIOS OU QUALQUER OUTRA COISA</label>
         <%= f.text_area :mensagens, id: :contact_mensagens, class: "form-control", rows: "5"%>
       </div>
       </div>      
-
+      <br>
+      
       <div class="form-group">
           <div class="col-sm-4">
-          <%= f.submit "Enviar Mensagem", class: "btn btn-default form-control " %>
+          <%= f.submit "Enviar Mensagem", class: "btn form-control " %>
           </div>
           <div class="col-sm-8">
           <div class="alert alert-success" style="display: none;"></div>          

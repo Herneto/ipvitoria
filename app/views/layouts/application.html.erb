@@ -11,7 +11,7 @@
 	</head>
 	<body>
 
-	<%= render 'layouts/color' %>
+	<%= render 'layouts/cor' %>
 	<%= render 'layouts/header' %>
 	<div id="main"> 
 	<%= yield %>		
@@ -32,8 +32,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsFvZDnwvQxAxnKY-A4IyTYDHAvb3V5ZI&callback=initMap"
     async defer></script>
 
-	<script src="/assets/jquery-1.10.2.js"></script>
-	<script src="/assets/bootstrap.js"></script>
+	<script src="<%= asset_path("jquery-1.10.2.js") %>"></script>
+	<script src="<%= asset_path("bootstrap.js") %>"></script>
 	<script type="text/javascript">
 	    $(window).on('scroll',function(){
 			if($(window).scrollTop()){
