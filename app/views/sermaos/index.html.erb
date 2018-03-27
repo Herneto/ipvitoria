@@ -1,0 +1,51 @@
+<div class="container">
+<div class="wraptext"> 
+    <div class="text-left">
+        <h1 class="tema">A fé vem por ouvir a Palavra de Deus!</h1>
+        <p >What can I expect?: Now that you’ve made your initial introduction, it’s
+        time to explain to your potential new visitor what they can expect upon
+        attending your church for the first time as well as provide answers to
+        their questions.</p>
+
+        <p>Consider this: As our culture becomes more “unchurched,” don’t simply
+        expect your new visitors to have an inherent understanding of what goes
+        on in a church service. Spell it out in black and white - be precise.</p>    
+    </div>
+</div>
+</div>
+<div class="container">
+<div class="wraptext">
+
+  <div class="row text-center"> 
+  <% @sermaos.each do |sermao| %>
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4" style="display: inline-block;">
+      <div class="thumbnail">
+        <p><strong><%= sermao.id %></strong></p>
+        <p><%= sermao.descricao %></p>
+        <p>Pregador: <%= sermao.pregador %></p>
+        <button class="btn" data-toggle="modal" data-target="#modal<%= sermao.id %>">Ouvir</button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modal<%= sermao.id %>" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4><span class="glyphicon glyphicon-music"></span> <%= sermao.titulo %></h4>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+  </div>
+</div>

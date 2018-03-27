@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @sermao.titulo %>
+</p>
+
+<p>
+  <strong>Pregador:</strong>
+  <%= @sermao.pregador %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @sermao.local %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @sermao.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_sermao_path(@sermao) %> |
+<%= link_to 'Back', sermaos_path %>

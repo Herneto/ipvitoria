@@ -1,0 +1,3 @@
+class Sermao < ApplicationRecord
+
+end

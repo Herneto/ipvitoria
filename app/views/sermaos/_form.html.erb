@@ -1,0 +1,37 @@
+<%= form_with(model: sermao, local: true) do |form| %>
+  <% if sermao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sermao.errors.count, "error") %> prohibited this sermao from being saved:</h2>
+
+      <ul>
+      <% sermao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo, id: :sermao_titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pregador %>
+    <%= form.text_field :pregador, id: :sermao_pregador %>
+  </div>
+
+  <div class="field">
+    <%= form.label :local %>
+    <%= form.text_field :local, id: :sermao_local %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_area :descricao, id: :sermao_descricao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
