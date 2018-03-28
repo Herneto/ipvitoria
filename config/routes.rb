@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   match 'inicio' => 'home#index', via: 'get'
   match 'declaracao' => 'declaracao#index', via: 'get'
   match 'lideres' => 'lideres#index', via: 'get'
+  match '/mais/:id' => 'sermaos#index', via: 'get'
+  
   root 'home#index'
 end

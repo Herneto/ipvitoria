@@ -13,39 +13,16 @@
     </div>
 </div>
 </div>
+
 <div class="container">
 <div class="wraptext">
 
-  <div class="row text-center"> 
-  <% @sermaos.each do |sermao| %>
-      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4" style="display: inline-block;">
-      <div class="thumbnail">
-        <p><strong><%= sermao.titulo %></strong></p>
-        <p><%= sermao.descricao %></p>
-        <p>Pregador: <%= sermao.pregador %></p>
-        <button class="btn" data-toggle="modal" data-target="#modal<%= sermao.id %>">Ouvir</button>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="modal<%= sermao.id %>" role="dialog">
-        <div class="modal-dialog">
+<div class="s row text-center"> 
+    <%= render @sermaos%>
+</div>
 
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4><span class="glyphicon glyphicon-music"></span> <%= sermao.titulo %></h4>
-            </div>
-            <div class="modal-body">
-              
-            </div>
-            <div class="modal-footer">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <% end %>
-  </div>
-  </div>
+<div class="b row text-center"> 
+<a href="/mais/5" class="show-more btn" data-remote="true" role="button" style="margin-top: 10px;" aria-pressed="true">Mostrar Mais ></a>
+</div>
+</div>
 </div>

@@ -1,0 +1,9 @@
+$('.show-more').remove();
+
+<% if @sermaos.last.id != 1 %>
+$('.b').html('<a href="/mais/<%= @sermaos.last.id %>" class="show-more btn" data-remote="true" role="button" style="margin-top: 10px;" aria-pressed="true">Mostrar Mais ></a>');
+<% end %>	
+
+
+
+$('.s').append('<%= j render @sermaos %>')

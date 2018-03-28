@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'friendly_id'
 
+gem 'carrierwave'
 #gem 'bootstrap3-rails'
 
 #gem 'bootstrap-sass'

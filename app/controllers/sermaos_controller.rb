@@ -1,15 +1,18 @@
 class SermaosController < ApplicationController
-  before_action :set_sermao, only: [:show, :edit, :update, :destroy]
+  before_action :set_sermao, only: [:edit, :update, :destroy]
 
   # GET /sermaos
   # GET /sermaos.json
   def index
-    @sermaos = Sermao.order('created_at DESC').limit(3)
-  end
-
-  # GET /sermaos/1
-  # GET /sermaos/1.json
-  def show
+    if params[:id]
+      @sermaos = Sermao.where('id < ?', params[:id]).limit(5)
+    else
+      @sermaos = Sermao.limit(5)
+    end
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   # GET /sermaos/new
