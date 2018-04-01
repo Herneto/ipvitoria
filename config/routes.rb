@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :visita
   resources :sermaos
   resources :contacts
   match 'historia' => 'historia#index', via: 'get'

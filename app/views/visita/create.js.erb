@@ -1,0 +1,13 @@
+$("#visitum_nome").val('');
+$("#visitum_email").val('');
+$("#visitum_comentarios").val('');
+$("#visitum_telefone").val('');
+
+$(".alert").html("Enviada!");
+$(".alert").show(300);
+
+$(function(){
+    setTimeout(function(){
+        $(".alert").fadeOut('fast');
+    }, 2000);
+});

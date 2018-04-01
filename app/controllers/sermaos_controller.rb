@@ -1,15 +1,17 @@
 class SermaosController < ApplicationController
-  before_action :set_sermao, only: [:edit, :update, :destroy]
+  before_action :set_sermao, only: [:show, :edit, :update, :destroy]
 
   # GET /sermaos
   # GET /sermaos.json
   def index
-    if params[:id]
-      @sermaos = Sermao.where('id < ?', params[:id]).limit(5)
-    else
-      @sermaos = Sermao.limit(5)
-    end
     respond_to do |format|
+      
+      if params[:id]
+        @sermaos = Sermao.where('id < ?', params[:id]).limit(6)  
+        @ultimo = Sermao.last.id      
+      else params[:id] == nil
+        @sermaos = Sermao.limit(6)
+      end
       format.html
       format.js
     end
@@ -19,6 +21,12 @@ class SermaosController < ApplicationController
   def new
     @sermao = Sermao.new
   end
+
+ # GET /contacts/1
+  # GET /contacts/1.json
+  def show
+  end
+
 
   # GET /sermaos/1/edit
   def edit

@@ -1,0 +1,16 @@
+<div class="container" id="ultimos-sermoes"> 
+    <div class="wraptext text-center"> 
+        <h4> Últimos Sermões </h4>
+        <div class="row text-center"> 
+            <%= render @sermoes%>
+        </div>    
+    </div>
+</div>
+
+<div class="container text-center" id="proximo-encontro"> 
+    <div class="wraptext"> 
+        <h4>  A próxima reunião será no dia </h4>
+        <h3>  1 de Abril de 2018 às 10:00  </h3>
+        <%= link_to "Desejo fazer uma visita!", visita_url , class: "btn tema"%>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<%= form_with(model: visitum, local: true) do |form| %>
+  <% if visitum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(visitum.errors.count, "error") %> prohibited this visitum from being saved:</h2>
+
+      <ul>
+      <% visitum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, id: :visitum_nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :visitum_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, id: :visitum_telefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comentarios %>
+    <%= form.text_area :comentarios, id: :visitum_comentarios %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

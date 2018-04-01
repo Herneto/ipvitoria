@@ -20,8 +20,33 @@
 <% elsif controller_name == "home" %>
 		<style type="text/css">
 			.mynav{
-				background: url("<%= asset_path("6.jpg") %>") fixed ;
+				background: url("<%= asset_path("6.jpg") %>");
+				background-size: cover;
+    			background-position: center;
 			}
+			.btn {
+				padding: 10px 20px;
+				background-color: #c5753a !important;
+				color: white;
+				border-radius: 0;
+				transition: .2s;
+			}
+
+			.thumbnail {
+				padding: 0 0 0 0;
+				border-radius: 0;
+				height: 237px !important;
+				width: 209px !important;
+				max-width: 209px !important;
+				max-height: 237px !important;
+			}
+			
+			.thumbnail p {
+				margin-top: 15px;
+				color: #555;
+			}
+	
+
 		</style>
 <% elsif controller_name == "historia" %>
 		<style type="text/css">
@@ -83,6 +108,36 @@
 		&:hover {
 			color: rgb(191, 63, 105);
 			background-color: rgb(191, 63, 105);
+		}
+		}
+	</style>
+<% elsif controller_name == "visita" %>
+	<style type="text/css">
+		.mynav{
+			background: url("<%= asset_path("3.jpg") %>") fixed ;
+		}
+		.tema{
+			color: #53bc3c;
+		}
+
+		.btn {
+				padding: 10px 20px;
+				background-color: #53bc3c !important;
+				color: white;
+				border-radius: 0;
+				transition: .2s;
+		}
+
+		a {
+			color: #53bc3c;
+
+			&:visited {
+				color: #53bc3c;
+			}
+
+		&:hover {
+			color: #53bc3c;
+			background-color: #53bc3c;
 		}
 		}
 	</style>

@@ -1,23 +1,12 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 * {
 	font-family: 'PT Sans', sans-serif !important;
-}
-
-.hero {
-	background-color: #999;
-	padding: 80px 0px;
-	height: 400px;
 }
 
 .mynav{
 	background-size: cover;
 	height: 500px;
 	text-align: center;
-	color: #FFF;
-	
+	color: #FFF;	
 }
 
 .navbar{
@@ -79,7 +68,7 @@
 .mynav .contents p {
 	font-family: 'Montserrat', sans-serif !important;
 	padding-top: 0px;
-	font-size: 16px;
+	font-size: 18px;
 	color: #fff;
 	font-weight: 400;
 	line-height: 30px;
@@ -94,7 +83,7 @@
 	background-color: rgba(0, 0, 0, 0.075) !important;
 }
 
-#direcoes{
+footer{
 	padding: 0 0 24px;
     background: black;
     color: #e3e3e3;
@@ -102,8 +91,8 @@
     align-items: center;
 }
 
-#new_contact .form-group{
-	margin: 40px 0;
+#new_contact .form-group, #new_visitum .form-group{
+	margin: 25px 0;
 }
 
 #map {
@@ -116,3 +105,33 @@
 	width: 200px;
 }
 
+#proximo-encontro{
+	width: 100%;
+	//background-size: cover !important;
+    //background-position: center !important;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+	font-weight: bolder;
+	color: black;
+	
+}
+
+#proximo-encontro h3{
+	font-size: 40px;	
+}
+
+#proximo-encontro h4, #ultimos-sermoes h4{
+	font-size: 25px;	
+}
+
+#ultimos-sermoes{
+	width: 100%;
+	//background-size: cover !important;
+    //background-position: center !important;
+    
+	font-weight: bolder;
+	color: black;
+}

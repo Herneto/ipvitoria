@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
 
    def index
-    #render(:layout => "layouts/application") 
-    
+        @sermoes =  Sermao.limit(3)
    end
 end
