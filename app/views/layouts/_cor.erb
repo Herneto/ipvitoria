@@ -20,7 +20,7 @@
 <% elsif controller_name == "home" %>
 		<style type="text/css">
 			.mynav{
-				background: url("<%= asset_path("6.jpg") %>");
+				background: url("<%= asset_path("6.jpg") %>") fixed;
 				background-size: cover;
     			background-position: center;
 			}
@@ -108,6 +108,27 @@
 		&:hover {
 			color: rgb(191, 63, 105);
 			background-color: rgb(191, 63, 105);
+		}
+		}
+	</style>
+<% elsif controller_name == "fotos" %>
+	<style type="text/css">
+		.mynav{
+			background: url("<%= asset_path("8.jpg") %>") fixed ;
+		}
+		.tema{
+			color: #c83d63;
+		}
+		a {
+  			color: #c83d63;
+
+			&:visited {
+				color: #c83d63;
+			}
+
+		&:hover {
+			color: #c83d63;
+			background-color: #c83d63;
 		}
 		}
 	</style>
