@@ -80,6 +80,6 @@ class SermaosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sermao_params
-      params.require(:sermao).permit(:titulo, :pregador, :local, :descricao)
+      params.require(:sermao).permit(:titulo, :pregador, :local, :descricao, :pregado_em)
     end
 end

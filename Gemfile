@@ -27,13 +27,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 #gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-#gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', platforms: :ruby
 
 gem 'friendly_id'
 gem 'pg'  
 gem 'carrierwave'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 #gem 'bootstrap3-rails'
+gem 'google_drive', '~> 2.1', '>= 2.1.5'
 
 #gem 'bootstrap-sass'
 

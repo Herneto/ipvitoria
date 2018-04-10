@@ -1,24 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="wrap text-center"> 
+  <p>
+  <h2 class="tema"> <%= @sermao.titulo %> </h2>
+  </p>
 
-<p>
-  <strong>Titulo:</strong>
-  <%= @sermao.titulo %>
-</p>
-
-<p>
+  <p>
   <strong>Pregador:</strong>
   <%= @sermao.pregador %>
-</p>
+  </p>
+  <audio controls autoplay name="media">
+  <source src="" type="audio/mp3">
+  </audio>
 
-<p>
-  <strong>Local:</strong>
-  <%= @sermao.local %>
-</p>
-
-<p>
+  <p>
   <strong>Descricao:</strong>
   <%= @sermao.descricao %>
-</p>
+  </p>
 
-<%= link_to 'Edit', edit_sermao_path(@sermao) %> |
-<%= link_to 'Back', sermaos_path %>
+  <%= link_to 'Edit', edit_sermao_path(@sermao) %> |
+  <%= link_to 'Back', sermaos_path %>
+</div> 
+
