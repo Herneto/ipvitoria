@@ -20,3 +20,7 @@ $(document).ready ->
         return
     return
   return
+
+  $(document).on 'turbolinks:click', ->
+      $('audio').remove();
+  return
