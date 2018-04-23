@@ -41,23 +41,19 @@
                     <li class="nav-item">
                         <a href="/lideres">Líderança</a>
                     </li>
-                    <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ver
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">  
-                        <li>
-                            <a class="dropdown-item" href="/fotos">Fotos</a>
-                        </li>
-                        <li >
-                            <a class="dropdown-item" href="">Vídeos</a>
-                        </li>
-                    </ul>
-                </li>
+                    <li class="nav-item">
+                        <a href="/fotos">Galeria</a>
+                    </li>
                     <li class="nav-item">
                         <a href="/contacts">Contactos</a>
-                    </li>
+                    </li>                    
+                    <% if user_signed_in? %>
+                        <li class="active nav-item">
+                            <%= link_to "Sair", destroy_user_session_path, method: :delete %>
+                        </li>
+                    <% end %>                    
                 </ul>
+                
             </div>
         </div>
     </div>

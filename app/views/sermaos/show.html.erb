@@ -12,7 +12,9 @@
   <strong>Descricao:</strong>
   <%= @sermao.descricao %>
   </p>
-
+<% if user_signed_in? %>
   <%= link_to 'Edit', edit_sermao_path(@sermao) %> |
   <%= link_to 'Back', sermaos_path %>
+<% end %> 
+  
 </div> 
