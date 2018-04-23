@@ -34,7 +34,6 @@ gem 'pg'
 gem 'carrierwave'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 #gem 'bootstrap3-rails'
-gem 'google_drive', '~> 2.1', '>= 2.1.5'
 
 #gem 'bootstrap-sass'
 
