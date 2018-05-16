@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   match 'declaracao' => 'declaracao#index', via: 'get'
   match 'lideres' => 'lideres#index', via: 'get'
   match 'fotos' => 'fotos#index', via: 'get'
+  match 'mais' => 'sermaos#mais', via: 'get'
   
   root 'home#index'
 end

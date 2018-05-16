@@ -4,15 +4,13 @@ class SermaosController < ApplicationController
   # GET /sermaos
   # GET /sermaos.json
   def index
+    @sermaos = Sermao.limit(6)
+  end
+
+  def mais
     respond_to do |format|
-      
-      if params[:id]
-        @sermaos = Sermao.where('id < ?', params[:id]).limit(6)  
-        @ultimo = Sermao.last.id      
-      else params[:id] == nil
-        @sermaos = Sermao.limit(6)
-      end
-      format.html
+      @sermaos = Sermao.where('id < ?', params[:id]).limit(6)
+      @ultimo = Sermao.last.id
       format.js
     end
   end

@@ -1,9 +1,18 @@
 <% if controller_name == "contacts" %>
     <style type="text/css">
 		.mynav{
-			background: url("<%= asset_path("1.jpg") %>") fixed ;
-			
+			background: url("<%= asset_path("nocolor.jpg") %>") fixed ;
+      position: relative;
 			}
+
+    .layer {
+      background-color: rgb(251, 255, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 		.tema{
 			color: rgb(191, 193, 69);
 			}
@@ -15,15 +24,24 @@
 			border-radius: 0;
 			transition: .2s;
 			}
-		
+
 		</style>
 <% elsif controller_name == "home" %>
 		<style type="text/css">
 			.mynav{
-				background: url("<%= asset_path("6.jpg") %>") fixed;
-				background-size: cover;
-    			background-position: center;
+				background: url("<%= asset_path("nocolor.jpg") %>") fixed;
+        position: relative;
 			}
+
+      .layer {
+        background-color: rgba(240, 102, 0, 0.50);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
 			.btn {
 				padding: 10px 20px;
 				background-color: #c5753a !important;
@@ -50,21 +68,52 @@
 		</style>
 <% elsif controller_name == "historia" %>
 		<style type="text/css">
-			.mynav{
-			background: url("<%= asset_path("5.jpg") %>") fixed ;
-			}
+      .mynav {
+        background: url("<%= asset_path("nocolor.jpg") %>") fixed;
+        position: relative;
+      }
+
+      .layer {
+        background-color: rgba(255, 0, 0, 0.50);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
 		</style>
 <% elsif controller_name == "declaracao" %>
 	<style type="text/css">
-		.mynav{
-		    background: url("<%= asset_path("7.jpg") %>") fixed ;
-					}
+    .mynav {
+      background: url("<%= asset_path("nocolor.jpg") %>") fixed;
+      position: relative;
+    }
+
+    .layer {
+      background-color: rgba(155, 0, 135, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 		</style>
 <% elsif controller_name == "sermaos" %>
 	<style type="text/css">
-		.mynav{
-			background: url("<%= asset_path("4.jpg") %>") fixed ;
-		}
+    .mynav {
+      background: url("<%= asset_path("nocolor.jpg") %>") fixed;
+      position: relative;
+    }
+
+    .layer {
+      background-color: rgba(0, 255, 238, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
 		.tema{
 			color: rgb(75, 168, 156);
 			}
@@ -92,9 +141,19 @@
 	</style>
 <% elsif controller_name == "lideres" %>
 	<style type="text/css">
-		.mynav{
-			background: url("<%= asset_path("8.jpg") %>") fixed ;
-		}
+    .mynav {
+      background: url("<%= asset_path("nocolor.jpg") %>") fixed;
+      position: relative;
+    }
+
+    .layer {
+      background-color: rgba(200, 0, 123, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 		.tema{
 			color: rgb(191, 63, 105);
 		}
@@ -114,8 +173,19 @@
 <% elsif controller_name == "fotos" %>
 	<style type="text/css">
 		.mynav{
-			background: url("<%= asset_path("8.jpg") %>") fixed ;
+			background: url("<%= asset_path("nocolor.jpg") %>") fixed ;
+      position: relative;
 		}
+
+    .layer {
+      background-color: rgba(0, 200, 116, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
 		.tema{
 			color: #c83d63;
 		}
@@ -134,9 +204,19 @@
 	</style>
 <% elsif controller_name == "visita" %>
 	<style type="text/css">
-		.mynav{
-			background: url("<%= asset_path("3.jpg") %>") fixed ;
-		}
+    .mynav {
+      background: url("<%= asset_path("nocolor.jpg") %>") fixed;
+      position: relative;
+    }
+
+    .layer {
+      background-color: rgba(0, 200, 24, 0.51);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 		.tema{
 			color: #53bc3c;
 		}
@@ -150,16 +230,16 @@
 		}
 
 		a {
-			color: #53bc3c;
+			  color: #53bc3c;
 
-			&:visited {
-				color: #53bc3c;
-			}
+        &:visited {
+          color: #53bc3c;
+        }
 
-		&:hover {
-			color: #53bc3c;
-			background-color: #53bc3c;
-		}
+        &:hover {
+          color: #53bc3c;
+          background-color: #53bc3c;
+        }
 		}
 	</style>
 <% end %>			
