@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', platforms: :ruby
 
 gem 'friendly_id'
-gem 'pg'  
+#gem 'pg'  
 gem 'carrierwave'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 #gem 'bootstrap3-rails'
